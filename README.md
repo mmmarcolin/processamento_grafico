@@ -8,5 +8,5 @@ Execute os seguintes steps:
 2. cmake --build .
 3. cmd /c vivencial01.exe
 
-Lucas Rafael Locatelli
-Matheus Marcolin Trindade
+- Lucas Rafael Locatelli
+- Matheus Marcolin Trindade
