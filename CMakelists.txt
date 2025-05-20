@@ -50,13 +50,18 @@ set(EXERCISES
     ExemplosMoodle/M3_material/exemplo_03
     ExemplosMoodle/M4_material/exemplo_04
     # ExemplosMoodle/M5_material/exemplo_05
-    HelloTriangle
-    HelloTransform
-    HelloTexture
+    Basics/HelloTriangle
+    Basics/HelloTransform
+    Basics/HelloTexture
     Modulo2/Ex1Parte1M2
     Modulo2/Ex1Parte2M2
     Modulo3/M3JogoCores
     vivencial01
+    # vivencial02
+    # vivencial03
+    tarefa01
+    # tarefa02
+    # tarefa03
 )
 
 add_compile_options(-Wno-pragmas)

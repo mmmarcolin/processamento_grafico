@@ -1,9 +1,15 @@
-# vivencial01
+# Steps to reproduce
 
-Lógica aplicada para gerar triangulo na tela a cada 3 cliques.
+1. `cd build`
+2. `cmake --build .`
+3. `cmd /c {fileName}.exe`
 
-Execute os seguintes steps:
-
-1. cd build
-2. cmake --build .
-3. cmd /c vivencial01.exe
+# Files
+| File           | Description                               | Status          |
+|----------------|-------------------------------------------|-----------------|
+| `tarefa01`     | Aplicação de transformações               | ✅ Completed    |
+| `tarefa02`     | Jogo das Cores                            | 🔄 In process   |
+| `tarefa03`     | Instanciando objetos texturizados         | 🔄 In process   |
+| `vivencial01`  | Triângulos de tamanhos variados           | ✅ Completed    |
+<!-- | `vivencial02`  | ❓                                       | ❓              |
+| `vivencial03`  | ❓                                       | ❓              | -->
