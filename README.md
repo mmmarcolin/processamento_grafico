@@ -1,15 +1,20 @@
-# Steps to reproduce
+# Processamento Grafico
 
-1. `cd build`
-2. `cmake --build .`
-3. `cmd /c {fileName}.exe`
+## Steps to reproduce
 
-# Files
-| File           | Description                               | Status          | Colleagues              |
-|----------------|-------------------------------------------|-----------------|-------------------------|
-| `tarefa01`     | Aplicação de transformações               | ✅ Completed    | -                       |
-| `tarefa02`     | Jogo das Cores                            | 🔄 In process   | -                       |
-| `tarefa03`     | Instanciando objetos texturizados         | 🔄 In process   | -                       |
-| `vivencial01`  | Triângulos de tamanhos variados           | ✅ Completed    | Lucas Rafael Locatelli  |
-<!-- | `vivencial02`  | ❓                                       | ❓              |                         |
-| `vivencial03`  | ❓                                       | ❓              |                         | -->
+1. `Clone repository`
+2. `Ctrl+Shift+P > Select a Kit > GCC`
+4. `cd build`
+5. `cmake --build .`
+6. `cmd /c {fileName}.exe`
+
+## Files
+| FileName       | Description                     | Colleagues                                         |
+|----------------|---------------------------------|----------------------------------------------------|
+| `tarefa02`     | Triângulos personalizados       | Matheus Trindade                                   |
+| `tarefa03`     | Jogo das cores                  | Matheus Trindade, Lucas Locatelli                  |
+| `tarefa04`     | Hitboxes em sprites             | Matheus Trindade                                   |
+| `tarefa05`     | -                               | Matheus Trindade                                   |
+| `vivencial01`  | Triângulos de tamanhos variados | Matheus Trindade, Lucas Locatelli                  |
+| `vivencial02`  | Fundo em Parallax               | Matheus Trindade, Mariana Sales, Lucas Locatelli   |
+| `vivencial03`  | -                               | -                                                  |

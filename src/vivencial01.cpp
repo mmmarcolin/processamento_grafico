@@ -6,7 +6,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-const GLint WIDTH = 1080, HEIGHT = 720;
+const GLint WIDTH = 800, HEIGHT = 600;
 GLuint VAO, VBO;
 GLuint shader_programme;
 std::vector<GLfloat> vertices;
@@ -30,9 +30,7 @@ const char* fragment_shader = R"(
     #version 410 core
     in vec3 fragColor;
     out vec4 color;
-    void main() {
-        color = vec4(fragColor, 1.0);
-    };
+    void main() { color = vec4(fragColor, 1.0); };
 )";
 
 void mouse_callback(GLFWwindow* window, int button, int action, int mods) {
