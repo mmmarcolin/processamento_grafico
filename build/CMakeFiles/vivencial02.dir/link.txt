@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\vivencial02.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\vivencial02.dir/objects.a @CMakeFiles\vivencial02.dir\objects1.rsp
-C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\vivencial02.dir/objects.a -Wl,--no-whole-archive -o vivencial02.exe -Wl,--out-implib,libvivencial02.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\vivencial02.dir\linkLibs.rsp
