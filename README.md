@@ -14,7 +14,7 @@
 | `tarefa02`     | Triângulos personalizados       | Matheus Trindade                                   |
 | `tarefa03`     | Jogo das cores                  | Matheus Trindade, Lucas Locatelli                  |
 | `tarefa04`     | Hitboxes em sprites             | Matheus Trindade                                   |
-| `tarefa05`     | -                               | Matheus Trindade                                   |
+| `tarefa05`     | Animação                        | Matheus Trindade                                   |
 | `vivencial01`  | Triângulos de tamanhos variados | Matheus Trindade, Lucas Locatelli                  |
 | `vivencial02`  | Fundo em Parallax               | Matheus Trindade, Mariana Sales, Lucas Locatelli   |
 | `vivencial03`  | -                               | -                                                  |

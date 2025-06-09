@@ -67,12 +67,12 @@ int main() {
 	glViewport(0, 0, width, height);
 	GLuint shaderID = setupShader();
 	GLuint VAO = setupSprite();
-	bgTex[0] = loadTexture("../assets/Layers/layer06_sky.png");
-	bgTex[1] = loadTexture("../assets/Layers/layer05_rocks.png");
-	bgTex[2] = loadTexture("../assets/Layers/layer04_clouds.png");
-	bgTex[3] = loadTexture("../assets/Layers/layer03_trees.png");
-	bgTex[4] = loadTexture("../assets/Layers/layer02_cake.png");
-	bgTex[5] = loadTexture("../assets/Layers/layer01_ground.png");
+	bgTex[0] = loadTexture("../assets/layers/layer06_sky.png");
+	bgTex[1] = loadTexture("../assets/layers/layer05_rocks.png");
+	bgTex[2] = loadTexture("../assets/layers/layer04_clouds.png");
+	bgTex[3] = loadTexture("../assets/layers/layer03_trees.png");
+	bgTex[4] = loadTexture("../assets/layers/layer02_cake.png");
+	bgTex[5] = loadTexture("../assets/layers/layer01_ground.png");
 	GLuint playerTex = loadTexture("../assets/sprites/Vampirinho.png");
 	glUseProgram(shaderID);
 	GLint modelLoc = glGetUniformLocation(shaderID, "model");

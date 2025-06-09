@@ -58,7 +58,7 @@ set(EXERCISES
     tarefa02
     tarefa03
     tarefa04
-    # tarefa05
+    tarefa05
     vivencial01
     vivencial02
     # vivencial03
