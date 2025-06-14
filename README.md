@@ -18,3 +18,4 @@
 | `vivencial01`  | Triângulos de tamanhos variados | Matheus Trindade, Lucas Locatelli                               |
 | `vivencial02`  | Fundo em Parallax               | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |
 | `vivencial03`  | Tilemap Isométrico              | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |
+| `grauB`        | Jogo Tilemap Isométrico         | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |

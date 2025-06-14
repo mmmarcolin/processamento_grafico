@@ -62,8 +62,8 @@ set(EXERCISES
     vivencial01
     vivencial02
     vivencial03
-    # Aulas/ExemplosMoodle/M6_material/exemplo_07
-)
+    # grauB
+  )
 
 add_compile_options(-Wno-pragmas)
 

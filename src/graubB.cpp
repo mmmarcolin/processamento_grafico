@@ -131,27 +131,27 @@ void initBuffers() {
 }
 
 void drawTile(int tileIndex, int i, int j, glm::mat4 projection) {
-    float tilesPerRow   = 7.0f;
-    float tileU         = (float)tileIndex / tilesPerRow;
-    float tileV         = 0.0f;
-    float tileUW        = 1.0f / tilesPerRow;
-    float tileVH        = 1.0f; 
-    glm::mat4 model     = glm::mat4(1.0f);
-    float screenX       = (j - i) * (TILE_WIDTH / 2.0f);
-    float screenY       = (i + j) * (TILE_HEIGHT / 2.0f);
-    model               = glm::translate(model, glm::vec3(screenX + SCREEN_WIDTH / 2 - TILE_WIDTH / 2, screenY + SCREEN_HEIGHT / 4, 0.0f));
-    model               = glm::scale(model, glm::vec3(TILE_WIDTH, TILE_HEIGHT, 1.0f));
+    float tilesPerRow = 7.0f;
+    float tileU = (float)tileIndex / tilesPerRow;
+    float tileV = 0.0f;
+    float tileUW = 1.0f / tilesPerRow;
+    float tileVH = 1.0f; 
+    glm::mat4 model = glm::mat4(1.0f);
+    float screenX = (j - i) * (TILE_WIDTH / 2.0f);
+    float screenY = (i + j) * (TILE_HEIGHT / 2.0f);
+    model = glm::translate(model, glm::vec3(screenX + SCREEN_WIDTH / 2 - TILE_WIDTH / 2, screenY + SCREEN_HEIGHT / 4, 0.0f));
+    model = glm::scale(model, glm::vec3(TILE_WIDTH, TILE_HEIGHT, 1.0f));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     float centerU = tileU + tileUW / 2.0f;
     float centerV = tileV + tileVH / 2.0f;
     float vertices[] = {
-        0.5f, 0.5f, centerU,        centerV,
-        0.5f, 0.0f, centerU,        tileV,
+        0.5f, 0.5f, centerU, centerV,
+        0.5f, 0.0f, centerU, tileV,
         1.0f, 0.5f, tileU + tileUW, centerV,
-        0.5f, 1.0f, centerU,        tileV + tileVH,
-        0.0f, 0.5f, tileU,          centerV,
-        0.5f, 0.0f, centerU,        tileV
+        0.5f, 1.0f, centerU, tileV + tileVH,
+        0.0f, 0.5f, tileU, centerV,
+        0.5f, 0.0f, centerU, tileV
     };
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_DYNAMIC_DRAW);
@@ -160,33 +160,33 @@ void drawTile(int tileIndex, int i, int j, glm::mat4 projection) {
 }
 
 void processInput(GLFWwindow* window) {
-    static double lastMove  = 0;
-    double now              = glfwGetTime();
+    static double lastMove = 0;
+    double now = glfwGetTime();
     if (now - lastMove < 0.20) return; 
     int dx = 0, dy = 0;
-    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)      dy--;
-    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)    dy++;
-    if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)    dx--;
-    if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)   dx++;
+    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) dy--;
+    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) dy++;
+    if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) dx--;
+    if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) dx++;
     int nx = playerX + dx;
     int ny = playerY + dy;
     if (nx >= 0 && nx < 3 && ny >= 0 && ny < 3 && (dx != 0 || dy != 0)) {
-        playerX     = nx;
-        playerY     = ny;
-        lastMove    = now;
+        playerX = nx;
+        playerY = ny;
+        lastMove = now;
     }
 }
 
 void drawPlayer(int i, int j, glm::mat4 projection) {
     glm::mat4 model = glm::mat4(1.0f);
-    float screenX   = (j - i) * (TILE_WIDTH / 2.0f);
-    float screenY   = (i + j) * (TILE_HEIGHT / 2.0f);
-    float px        = screenX + SCREEN_WIDTH / 2 - TILE_WIDTH / 2;
-    float py        = screenY + SCREEN_HEIGHT / 4;
-    float spriteW   = TILE_WIDTH * 0.75f; 
-    float spriteH   = TILE_HEIGHT * 1.5f; 
-    model           = glm::translate(model, glm::vec3(px + (TILE_WIDTH - spriteW) / 2, py + (TILE_HEIGHT - spriteH) - TILE_HEIGHT / 4, 0.0f));
-    model           = glm::scale(model, glm::vec3(spriteW, spriteH, 1.0f));
+    float screenX = (j - i) * (TILE_WIDTH / 2.0f);
+    float screenY = (i + j) * (TILE_HEIGHT / 2.0f);
+    float px = screenX + SCREEN_WIDTH / 2 - TILE_WIDTH / 2;
+    float py = screenY + SCREEN_HEIGHT / 4;
+    float spriteW = TILE_WIDTH * 0.75f; 
+    float spriteH = TILE_HEIGHT * 1.5f; 
+    model = glm::translate(model, glm::vec3(px + (TILE_WIDTH - spriteW) / 2, py + (TILE_HEIGHT - spriteH) - TILE_HEIGHT / 4, 0.0f));
+    model = glm::scale(model, glm::vec3(spriteW, spriteH, 1.0f));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
     float vertices[] = {
