@@ -61,7 +61,8 @@ set(EXERCISES
     tarefa05
     vivencial01
     vivencial02
-    # vivencial03
+    vivencial03
+    # Aulas/ExemplosMoodle/M6_material/exemplo_07
 )
 
 add_compile_options(-Wno-pragmas)

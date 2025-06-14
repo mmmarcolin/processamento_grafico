@@ -9,12 +9,12 @@
 6. `cmd /c {fileName}.exe`
 
 ## Files
-| FileName       | Description                     | Colleagues                                         |
-|----------------|---------------------------------|----------------------------------------------------|
-| `tarefa02`     | Triângulos personalizados       | Matheus Trindade                                   |
-| `tarefa03`     | Jogo das cores                  | Matheus Trindade, Lucas Locatelli                  |
-| `tarefa04`     | Hitboxes em sprites             | Matheus Trindade                                   |
-| `tarefa05`     | Animação                        | Matheus Trindade                                   |
-| `vivencial01`  | Triângulos de tamanhos variados | Matheus Trindade, Lucas Locatelli                  |
-| `vivencial02`  | Fundo em Parallax               | Matheus Trindade, Mariana Sales, Lucas Locatelli   |
-| `vivencial03`  | -                               | -                                                  |
+| FileName       | Description                     | Colleagues                                                      |
+|----------------|---------------------------------|-----------------------------------------------------------------|
+| `tarefa02`     | Triângulos personalizados       | Matheus Trindade                                                |
+| `tarefa03`     | Jogo das cores                  | Matheus Trindade, Lucas Locatelli                               |
+| `tarefa04`     | Hitboxes em sprites             | Matheus Trindade                                                |
+| `tarefa05`     | Animação                        | Matheus Trindade                                                |
+| `vivencial01`  | Triângulos de tamanhos variados | Matheus Trindade, Lucas Locatelli                               |
+| `vivencial02`  | Fundo em Parallax               | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |
+| `vivencial03`  | Tilemap Isométrico              | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |
