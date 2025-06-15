@@ -62,7 +62,7 @@ set(EXERCISES
     vivencial01
     vivencial02
     vivencial03
-    # grauB
+    grauB
   )
 
 add_compile_options(-Wno-pragmas)
