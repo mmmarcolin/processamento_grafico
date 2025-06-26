@@ -20,7 +20,7 @@
 | `vivencial03`  | Tilemap Isométrico              | Matheus Trindade, Mariana Sales, Lucas Locatelli, Bruno Gerling |
 | `grauB`        | Jogo Tilemap Isométrico         | Matheus Trindade, Mariana Sales                                 |
 
-# grauB - Jogo Tilemap Isométrico
+# Grau B - Jogo Tilemap Isométrico
 
 Alunos: Mariana Machado Sales e Matheus Marcolin Trindade
 
