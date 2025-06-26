@@ -26,7 +26,7 @@ Alunos: Mariana Machado Sales e Matheus Marcolin Trindade
 
 Este projeto é um jogo de coleta de moedas em um mapa isométrico, desenvolvido em C++ com OpenGL. O objetivo é coletar todas as moedas do mapa sem pisar na lava.
 
-![alt text](image.png)
+![Grau B Screenshot](assets/bScreenshot.png)
 
 ## Funcionalidades
 
